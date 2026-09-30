@@ -16,7 +16,7 @@ body {
     line-height: 1.6;
 }
 
-/* Selección de texto */
+
 ::selection {
     background: #555;
     color: #fff;
@@ -31,10 +31,6 @@ img {
     max-width: 100%;
     display: block;
 }
-
-/* ================================
-   HEADER / NAVBAR
-================================ */
 
 header {
     position: fixed;
@@ -58,8 +54,6 @@ header {
     justify-content: space-between;
 }
 
-/* Logo */
-
 .logo {
     font-size: 24px;
     font-weight: bold;
@@ -70,8 +64,6 @@ header {
 .logo span {
     color: #777;
 }
-
-/* Menú */
 
 .nav-links {
     display: flex;
@@ -90,8 +82,6 @@ header {
     color: #ffffff;
 }
 
-/* Línea debajo del menú */
-
 .nav-links a::after {
     content: "";
     position: absolute;
@@ -107,11 +97,7 @@ header {
     width: 100%;
 }
 
-/* ================================
-   HERO / INICIO
-================================ */
-
-.hero {
+.me {
     min-height: 100vh;
     padding: 130px 30px 80px;
 
@@ -122,7 +108,7 @@ header {
         radial-gradient(circle at 80% 40%, #222 0%, #0a0a0a 40%);
 }
 
-.hero-content {
+.me-content {
     width: 100%;
     max-width: 1200px;
     margin: auto;
@@ -133,36 +119,32 @@ header {
     gap: 70px;
 }
 
-.hero-text {
+.me-text {
     flex: 1;
 }
 
-.hero-text h1 {
+.me-text h1 {
     font-size: clamp(40px, 6vw, 70px);
     line-height: 1.1;
     color: #ffffff;
     margin-bottom: 20px;
 }
 
-.hero-text h2 {
+.me-text h2 {
     font-size: 22px;
     font-weight: normal;
     color: #999;
     margin-bottom: 25px;
 }
 
-.hero-text p {
+.me-text p {
     max-width: 650px;
     color: #aaa;
     font-size: 17px;
     margin-bottom: 30px;
 }
 
-/* ================================
-   FOTO DE PERFIL
-================================ */
-
-.hero-image {
+.me-image {
     width: 330px;
     height: 330px;
     flex-shrink: 0;
@@ -174,7 +156,7 @@ header {
     box-shadow: 0 0 50px rgba(255, 255, 255, 0.08);
 }
 
-.hero-image img {
+.me-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -182,10 +164,6 @@ header {
     border-radius: 50%;
     border: 5px solid #0a0a0a;
 }
-
-/* ================================
-   REDES SOCIALES
-================================ */
 
 .social-links {
     display: flex;
@@ -217,10 +195,6 @@ header {
     transform: translateY(-4px);
 }
 
-/* ================================
-   BOTÓN
-================================ */
-
 .btn {
     display: inline-block;
 
@@ -241,10 +215,6 @@ header {
     transform: translateY(-3px);
     box-shadow: 0 8px 25px rgba(255, 255, 255, 0.12);
 }
-
-/* ================================
-   SECCIONES
-================================ */
 
 .timeline-section,
 .projects-section,
@@ -278,17 +248,11 @@ header {
     margin: 15px auto 0;
 }
 
-/* ================================
-   EXPERIENCIA / TIMELINE
-================================ */
-
 .timeline {
     position: relative;
     max-width: 850px;
     margin: auto;
 }
-
-/* Línea central */
 
 .timeline::before {
     content: "";
@@ -324,8 +288,6 @@ header {
     text-align: left;
 }
 
-/* Punto de timeline */
-
 .timeline-item::before {
     content: "";
 
@@ -351,8 +313,6 @@ header {
 .timeline-item:nth-child(even)::before {
     left: -7px;
 }
-
-/* Tarjeta experiencia */
 
 .timeline-content {
     background: #121212;
@@ -393,8 +353,6 @@ header {
     color: #999;
 }
 
-/* Skills */
-
 .skills {
     list-style: none;
 
@@ -422,10 +380,6 @@ header {
 
     font-size: 12px;
 }
-
-/* ================================
-   PROYECTOS
-================================ */
 
 .projects-section {
     max-width: 1200px;
@@ -459,8 +413,6 @@ header {
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
 }
 
-/* Imagen proyecto */
-
 .project-img {
     height: 240px;
     overflow: hidden;
@@ -480,8 +432,6 @@ header {
     transform: scale(1.05);
 }
 
-/* Información */
-
 .project-info {
     padding: 25px;
 }
@@ -496,8 +446,6 @@ header {
     color: #999;
     margin-bottom: 20px;
 }
-
-/* Tecnologías */
 
 .project-tech {
     display: flex;
@@ -521,8 +469,6 @@ header {
     font-size: 12px;
 }
 
-/* Links */
-
 .project-links {
     display: flex;
     gap: 20px;
@@ -540,10 +486,6 @@ header {
     color: #fff;
 }
 
-/* ================================
-   CONTACTO
-================================ */
-
 .contact {
     text-align: center;
 }
@@ -555,8 +497,6 @@ header {
 
     color: #999;
 }
-
-/* Opciones contacto */
 
 .contact-options {
     display: grid;
@@ -610,10 +550,6 @@ header {
     color: #888;
     font-size: 14px;
 }
-
-/* ================================
-   FORMULARIO
-================================ */
 
 .contact-form {
     max-width: 750px;
@@ -682,8 +618,6 @@ header {
     color: #555;
 }
 
-/* Botón formulario */
-
 .btn-submit {
     width: 100%;
 
@@ -711,10 +645,6 @@ header {
 
     box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1);
 }
-
-/* ================================
-   FOOTER
-================================ */
 
 footer {
     background: #050505;
@@ -748,24 +678,20 @@ footer {
     margin: 0;
 }
 
-/* ================================
-   RESPONSIVE - TABLET
-================================ */
-
 @media (max-width: 850px) {
 
-    .hero-content {
+    .me-content {
         flex-direction: column-reverse;
 
         text-align: center;
     }
 
-    .hero-image {
+    .me-image {
         width: 270px;
         height: 270px;
     }
 
-    .hero-text p {
+    .me-text p {
         margin-left: auto;
         margin-right: auto;
     }
@@ -782,10 +708,6 @@ footer {
         grid-template-columns: 1fr;
     }
 }
-
-/* ================================
-   RESPONSIVE - CELULAR
-================================ */
 
 @media (max-width: 600px) {
 
@@ -811,24 +733,24 @@ footer {
         font-size: 13px;
     }
 
-    .hero {
+    .me {
         padding-top: 170px;
     }
 
-    .hero-image {
+    .me-image {
         width: 220px;
         height: 220px;
     }
 
-    .hero-text h1 {
+    .me-text h1 {
         font-size: 38px;
     }
 
-    .hero-text h2 {
+    .me-text h2 {
         font-size: 18px;
     }
 
-    .hero-text p {
+    .me-text p {
         font-size: 15px;
     }
 
